@@ -1,6 +1,23 @@
 [
   
   {
+    "title": null,
+    "url": "/posts/2024-04-29-CS231n-Leture-1/",
+    "categories": "",
+    "tags": "",
+    "date": "2024-04-29 20:17:11 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Lecture 1💡 Introduction to Convolutional Neural Networks for Visual recognitionLecture : https://www.youtube.com/watch?v=vT1JzLTH4G4&amp;list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk&amp;index=2Sildes : ...",
+    "content": "Lecture 1💡 Introduction to Convolutional Neural Networks for Visual recognitionLecture : https://www.youtube.com/watch?v=vT1JzLTH4G4&amp;list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk&amp;index=2Sildes : http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdfWhat is Computer Vision최근 인터넷 트래픽의 80%가 비디오 데이터일 정도로 엄청난 양의 시각적 데이터들이 쏟아져 나오기 시작했다. 이 데이터들을 효과적으로 이해하고 분석해서 컴퓨터로 하여금 인간의 시각적인 인식능력을 가질 수 있도록 알고리즘을 개발➡️ Computer Vision!Beginning to Computer Vision5억 4천만 년 전, 천만 년이라는 아주 짧은 시간 동안에 생물의 종이 급격하게 증가되는 사건이 있었다. 많은 가설들 중 앤드류 파커(Andrew Parker)는 그 시기쯤 생물 최초의 눈이 생겨났다고 주장했다. 시각이 생김으로 인해서 생물들이 보다 능동적으로 먹이를 찾아다니고, 위험으로부터 자신을 지킬 수 있었다는 것이다.➡️ 비전의 시작부터 현재에 이르기까지 시각이 얼마나 중요한 지 설명History of Computer Vision1950s’💡 Hubel &amp; Wiesel그들은 생물의 시각적 작동방식을 알고싶어했고, 이를 위해 고양이 뇌에 전극을 꽂아 실험을 진행했다. 고양이에게 어떠한 시각 자극을 주어야 고양이 뇌의 1차 시각 피질의 뉴런들이 격렬하게 반응할 지에 대한 실험이었는데, 1차 시각 피질 중에서도 시각적 Input의 Edge가 움직일 때 반응하는 단순한 세포에 초점을 맞추어 실험을 진행하였다.출 처 : https://www.researchgate.net/figure/Fig-In-the-classic-neuroscience-experiment-Hubel-and-Wiesel-discovered-a-cats-visual_fig1_335707980💡 결 론➡️ 시각 처리는 Edges와 같은 단순한 구조로 시작되어 점점 복잡한 요소를 처리하고, 궁극적으로 실제 시각적 Input을 인지할 수 있게 된다!1960s’      Early 1960s’      💡 Larry Roberts의 **Block World**          그는 사물들을 기하학적 모양으로 단순화하고, 이를 통해 시각적 세상을 재구성하는 연구를 진행했다.        출 처 : http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdf        July 7, 1966    MIT Summer Project가 열리고, 여름안에 대부분의 시각 체계을 구현하고자 했다.  1970s’💡 David Marr의 저서 **VISION** 저술. 컴퓨터 비전의 기본서David Marr는 컴퓨터 비전의 기본서가 되는 VISION을 저술하였다.David Marr의 저서 VISION의 표지출 처 : http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdfStanford, SRI에서는 단순한 모양이나 기하학적 구성을 통해 복잡한 객체를 단순화시키는 방법을 제안하기도 했다.출 처 : http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdf⚠️ 시도는 좋았으나 단순한 수준에 불과했다. 이 후로 연구자들은 객체 분할에도 초점을 맞추어 이미지의 각 픽셀을 의미있게 군집화하는 연구를 시작한다.Late 1990s’ &amp; 2000s’  Machine Learning  SVM, Boosting, Graphical models, 초기 NN  Paul Viola, Michael Jone          실시간 얼굴인식 성공(2001)        David Lowe                  SIFT feature                “SIFT” &amp; Object Recognition, David Lowe, 1999                  특징기반 객체인식 알고리즘          변화에 좀 더 강인하고 불변한 특징을 발견          이미지 전체를 매칭하던 것에서 중요한 특징들을 찾아내어 다른 객체에 매칭시키는 것이 더 쉽다는 것을 알게 됨                      Spatial Pyramid Matching, Support Vector Algorithm💡 **21C**, 인터넷과 카메라의 발전으로 데이터의 질이 급격이 상승하여 양질의 데이터셋을 모으기 위한 움직임이 이어졌다      PASCAL Visual Object Challenge(VOC)        2007년부터 2012년까지 객체 인식 성능의 변화          알고리즘 테스트에 사용됨            ImageNet          가장 큰 데이터셋을 만들어 Overfitting을 방지하고 일반화 능력을 키워 이 세상 모든 객체를 인식할 준비를 한다..! ILSVRC 대회를 열어 해당 데이터셋으로 지속적인 알고리즘 테스트를 진행했다.            2010년부터 2015년까지 오류율 변화          위의 사진에서 가장 주목해야할 것은 2012년도의 CNN.  CNN = Convolution Neural Networks                  이전과 비교하여 매우 감소된 오류율을 보여준다          이 강의에서는 CNN을 중점적으로 다룬다          2012년에 갑자기 나타난 것이 아니고 90년대에 이미 LeNet 이라는 아키텍처가 존재했음          ⚠️그러나, 비교할 수 없을만큼의 데이터셋과 연산량 증가로 오류율 감소에 큰 역할을 했다.                    강의에서 다룰 주제  Image classification  Object detection  Image captioning컴퓨터 비전의 최종 목표💡 사람처럼 볼 수 있는 기계를 만들자!아직 발전해야 할 연구 주제들  Semantic Segmentation  Perceptual Grouping  3D understanding  행동 인식"
+  },
+  
+  {
     "title": "블로그 만들기",
     "url": "/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1/",
     "categories": "메인, 서브",

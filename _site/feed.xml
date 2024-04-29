@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Jh's Blog</title>
   <subtitle>If you have a question about notes, feel free to mail me!</subtitle>
-  <updated>2024-04-29T19:47:31+09:00</updated>
+  <updated>2024-04-29T20:17:11+09:00</updated>
   <author>
     <name>J213h</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,41 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title></title>
+    <link href="http://localhost:4000/posts/2024-04-29-CS231n-Leture-1/" rel="alternate" type="text/html" title="" />
+    <published>2024-04-29T20:17:11+09:00</published>
+  
+    <updated>2024-04-29T20:17:11+09:00</updated>
+  
+    <id>http://localhost:4000/posts/2024-04-29-CS231n-Leture-1/</id>
+    <content src="http://localhost:4000/posts/2024-04-29-CS231n-Leture-1/" />
+    <author>
+      <name>J213h</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Lecture 1
+
+
+💡 Introduction to Convolutional Neural Networks for Visual recognition
+
+
+
+Lecture : https://www.youtube.com/watch?v=vT1JzLTH4G4&amp;amp;amp;list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk&amp;amp;amp;index=2
+
+Sildes : http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdf
+
+What is Computer Vision
+
+최근 인터넷 트래픽의 80%가 비디오 데이터일 정도로 엄청난 양의 시각적 데이터들이 쏟아져 나오기 시작했다. 이 데이터들을 효과적으로 이해하고 분석해서 컴퓨터로 하여금 인간의 시각적...</summary>
+
+  </entry>
 
   
   <entry>
