@@ -1,0 +1,50 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Jh's Blog</title>
+  <subtitle>If you have a question about notes, feel free to mail me!</subtitle>
+  <updated>2024-04-29T19:47:31+09:00</updated>
+  <author>
+    <name>J213h</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 J213h </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>블로그 만들기</title>
+    <link href="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1/" rel="alternate" type="text/html" title="블로그 만들기" />
+    <published>2024-04-29T19:42:00+09:00</published>
+  
+    <updated>2024-04-29T19:42:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1/</id>
+    <content src="http://localhost:4000/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1/" />
+    <author>
+      <name>J213h</name>
+    </author>
+
+  
+    
+    <category term="메인" />
+    
+    <category term="서브" />
+    
+  
+
+  <summary>블로그를 만들었다!
+테스트 해보자.</summary>
+
+  </entry>
+
+</feed>
+
+
