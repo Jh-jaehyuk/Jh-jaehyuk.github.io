@@ -16,12 +16,10 @@ timezone: Asia/Seoul
 
 title: Jh-jaehyuk # the main title
 
-tagline: Hi! I'm Jaehyuk Han.
-I'm interested in A.I. especially Computer Vision & LLM
-And solve algorithm problems for fun # it will display as the sub-title
+tagline: Who is interested in A.I. especially Computer Vision and LLM # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  If you have a question about notes, feel free to mail me!
+  A.I., CNN, Computer Vision, LLM, Algorithm
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
