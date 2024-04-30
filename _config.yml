@@ -16,7 +16,9 @@ timezone: Asia/Seoul
 
 title: Jh-jaehyuk # the main title
 
-tagline: Hi! I'm Jaehyuk Han.\nI'm interested in A.I. especially Computer Vision & LLM\n And solve algorithm problems for fun. # it will display as the sub-title
+tagline: Hi! I'm Jaehyuk Han.
+I'm interested in A.I. especially Computer Vision & LLM
+And solve algorithm problems for fun # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   If you have a question about notes, feel free to mail me!
