@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Jh's Blog # the main title
+title: Jh-jaehyuk # the main title
 
-tagline: 재혁의 개발일지 # it will display as the sub-title
+tagline: Hi! I'm Jaehyuk Han.\nI'm interested in A.I. especially Computer Vision & LLM\n And solve algorithm problems for fun. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   If you have a question about notes, feel free to mail me!
@@ -28,8 +28,8 @@ url: "https://Jh-jaehyuk.github.io"
 github:
   username: Jh-jaehyuk # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+# twitter:
+#   username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: jh.jaehyuk213@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
     - https://github.com/Jh-jaehyuk # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -91,7 +91,7 @@ theme_mode: dark
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# cdn: "https://chirpy-img.netlify.app"
+# cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/avatar.png"
