@@ -125,8 +125,7 @@ CMD ["node", "app.js"]
 ```
   
 터미널에서 Docker build 명령어를 사용하여 빌드를 진행하였습니다.
-![docker build fail1](https://github.com/Jh-jaehyuk/Jh-jaehyuk.github.io/assets/126551524/47aef102-0a87-452c-b8ef-e3947429b402">
-46895b99-c9e7-452d-b89d-646db949cf3c){: .align-center}  
+![docker build fail1](https://github.com/Jh-jaehyuk/Jh-jaehyuk.github.io/assets/126551524/47aef102-0a87-452c-b8ef-e3947429b402){: .align-center}
 예상과는 다르게 오류가 발생했습니다! 오류에 대한 내용을 검색해보니 **node.js**가 설치되지않아서 발생하는 문제인 것 같았습니다. 그래서 아래와 같이 Homebrew를 이용하여 node.js 설치를 진행하였습니다.
 ![install nodejs1](https://github.com/Jh-jaehyuk/Jh-jaehyuk.github.io/assets/126551524/6ebdb217-788d-4012-b452-c7bcde2290e4){: .align-center}  
 그리고 설치가 제대로 됐는지 확인해보았습니다.  
