@@ -1,32 +1,287 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
 
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
+<url>
+  <loc>https://jh-jaehyuk.github.io/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/archives/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/about/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-12%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-11%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-3%EC%A3%BC%EC%B0%A8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-2%EC%A3%BC%EC%B0%A8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-10%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-2%EA%B0%9C%EC%9B%94%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-9%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-8%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-7%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-6%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-5%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/Infrastructure-Docker-01/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-1%EA%B0%9C%EC%9B%94%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-4%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-1%EC%A3%BC%EC%B0%A8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-3%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-2%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/Search/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/SKN-1%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/page2/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/skn-ai-camp/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/sk%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4-family-ai-%EC%BA%A0%ED%94%84/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/weekly-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%EC%8A%A4%ED%84%B0%EB%94%94/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/monthly-%ED%9A%8C%EA%B3%A0/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/algorithm/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/bfs/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/binary-search/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/infrastructure/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/docker/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/skn-ai-camp/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/algorithm/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/remind/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/%EB%A9%94%EC%9D%B8/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/%EC%84%9C%EB%B8%8C/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/dfs/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/docker/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/dp/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/github/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/github-blog/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/infrastructure/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/search/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%94%94/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%EC%8A%A4%ED%83%9D/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/tags/%ED%81%90/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://jh-jaehyuk.github.io/categories/search/</loc>
+  <lastmod>2024-07-27T05:55:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    </url>
-    {% endfor %}
+
 </urlset>
