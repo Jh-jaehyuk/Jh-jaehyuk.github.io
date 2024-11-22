@@ -41,6 +41,23 @@ GPU는 병렬 처리 시 데이터를 HBM에서 가져온 후, SRAM에 올려놓
 저자들은 Flash attention에 **Tiling**과 **Recomputation**이라는 두 가지 기법을 적용하여
 기존 Attention 연산을 가속화하고자 하였습니다.
 
+### 일반적인 Attention의 메모리 사용 문제
+**Scaled Dot-Product Attention**의 주요 연산 중 하나는 **Query(Q)** 와 **Key(K)** 의 곱셈으로 
+생성되는 Attention Score 행렬입니다.  
+* Attention Score 행렬의 크기:  
+$[\text{Batch Size, Num Heads, Seq Len, Seq Len}]$  
+예를 들어, 입력 시퀀스 길이가 1024라고 하면, $\text{SeqLen}^2 = 1024^2 = 1,048,576$ 크기의 행렬이 생성됩니다.  
+이렇게 **시퀀스 길이에 비례하여 메모리 사용량이 제곱으로 증가**하므로, 긴 시퀀스에서는 메모리 부족이 발생할 가능성이 높습니다.  
+
+### Flash Attention의 블록 단위 처리 원리
+Flash Attention은 시퀀스를 작은 블록 단위로 나누어 연산을 수행합니다. 예를 들어, 시퀀스의 길이가 1024이고
+블록의 크기가 64라면, 전체 Attention 연산은 16개의 작은 블록으로 나뉘게 됩니다.  
+* 블록 단위로 Query와 Key를 연산하면, **각 블록에서 생성되는 Attention Score 행렬의 크기는 
+$[\text{Batch Size, Num Heads, Block Size, Block Size}]$** 로 줄어듭니다.  
+* 이전의 1024$\times$1024 크기의 행렬 대신, 64$\times$64 크기의 행렬만 메모리에 로드하여 계산할 수 있습니다.  
+결과적으로, **메모리 사용량은 블록 크기의 제곱에 비례**하며, 전체 연산 과정에서 메모리 사용량이 크게 감소합니다.
+
+
 ### Tiling
 기존 self-attention 알고리즘은 쿼리(Q), 키(K), 값(V) 행렬이 큰 크기로 메모리에 적재되며,
 이로 인해 메모리 사용량이 $O(N^2)$으로 증가합니다.  
