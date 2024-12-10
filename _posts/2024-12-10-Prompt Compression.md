@@ -131,7 +131,7 @@ compressed_prompt = llm_lingua.compress_prompt(
 
 ![LLMLingua-2-2048x1157](https://github.com/user-attachments/assets/f526e259-b07b-4295-baa6-cf625e227e06)
 
-### Improvements: Compare to LLMlingua & LongLLmLingua
+### Improvements: Compare to LLMlingua & LongLLMLingua
 1. 데이터 증류(Data Distillation) 기반 접근법
    - GPT-4로부터 데이터를 증류하여 학습
    - 주어진 텍스트를 최대한 간결하게 압축하면서도 정보를 충실히 유지하도록 설계
