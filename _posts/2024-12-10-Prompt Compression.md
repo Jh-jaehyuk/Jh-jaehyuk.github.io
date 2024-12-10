@@ -27,6 +27,8 @@ LLM의 응답 성능을 높이기 위해 많이 사용되고 있습니다.
 위와 같은 문제점들을 해결하기 위해 제안된 것이 *Prompt Compression*.  
 즉, **프롬프트 압축** 기법입니다.
 
+---
+
 ## LLMLingua (2023)
 > phi-2나 llama-7b와 같은 작은 언어모델을 이용하여 프롬프트를 압축하는 방법
 
@@ -60,8 +62,8 @@ llm_lingua = PromptCompressor("microsoft/phi-2")
 # Before that, you need to pip install optimum auto-gptq
 llm_lingua = PromptCompressor("TheBloke/Llama-2-7b-Chat-GPTQ", model_config={"revision": "main"})
 ```
-  
-===
+
+---
 
 ## LongLLMLingua(2024)
 > LongLLMLingua는 LLMLingua의 기본 구조를 확장하며, LLM이 긴 문맥을 처리하는 데
@@ -120,9 +122,9 @@ compressed_prompt = llm_lingua.compress_prompt(
     rank_method="longllmlingua",
 )
 ```
-  
-===
 
+---
+  
 ## LLMLingua-2 (2024)
 > LLMLingua-2는 이전의 두가지 기법에서 제시된 프롬프트 압축 기술을 크게 개선
 > 데이터 증류와 Token-level Classification를 기반으로 하는 효율적인 프롬프트 압축 메커니즘 제공
@@ -166,8 +168,8 @@ llm_lingua = PromptCompressor(
     use_llmlingua2=True, # Whether to use llmlingua-2
 )
 ```
-  
-===
+
+---
 
 :link: **참고 자료**  
 
